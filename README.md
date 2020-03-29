@@ -13,3 +13,8 @@ When the app is near to reach the limit of acceptable characters.  The app shows
 Finally the app doesn't accept more characters and stops working.
 
 ![0CHARACTERS](https://github.com/anferebu/CHARACTER-COUNTER/blob/master/0characters.jpg)
+
+<strong>INSTRUCTIONS</strong>
+
+1. Download and unzip the repository folder.
+2. Open the index.html file in Google Chrome to see the app.
