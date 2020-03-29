@@ -18,3 +18,5 @@ Finally the app doesn't accept more characters and stops working.
 
 1. Download and unzip the repository folder.
 2. Open the index.html file in Google Chrome to see the app.
+
+Author: Andrés R. Bucheli.
