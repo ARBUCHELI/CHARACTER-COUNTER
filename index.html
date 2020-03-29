@@ -1,0 +1,48 @@
+<html><head><title>JavaScript</title><style>
+	textarea {
+		width: 400px;
+		height: 50px;
+	}
+	.red{
+		color:red;
+	}
+</style>
+</head>
+
+<body>
+	<div>
+		<textarea class="txtLimits"></textarea>
+		<div class="output"></div>
+	</div>
+
+	<script>
+		const output = document.querySelector(".output");
+		const txt = document.querySelector("textarea");
+		/*
+		txt.addEventListener("change",textCounter);
+		txt.addEventListener("keyup",textCounter);
+		txt.addEventListener("keydown",textCounter);
+		*/
+		["keyup","keydown","change"].forEach(function(e){
+			txt.addEventListener(e,textCounter);
+		})
+
+		const maxLength = 10;
+		const warnLength = 5;
+
+		function textCounter(e){
+			console.log(e);
+			let count = txt.value.length;
+			if(count > maxLength){
+				console.log(txt.value.substring(0,maxLength));
+				txt.value = txt.value.substring(0,maxLength);
+			}
+			if(count > warnLength){
+				output.classList.add("red");
+			}else{
+				output.classList.remove("red");
+			}
+			output.innerHTML = (maxLength-count)+" characters left";
+			console.log(count);
+		}
+	</script>
