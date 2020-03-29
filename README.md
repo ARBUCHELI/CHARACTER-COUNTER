@@ -1,6 +1,6 @@
 # CHARACTER-COUNTER
 
-Code snippet that can be used for apps that need to implement the function of limiting the amout of characters that the users can type in a field (boxes for passwords, contact messages, etc.)
+Code snippet that can be used for apps that need to implement the function of limiting the amout of characters that the users can type in a field (boxes for passwords, contact messages, etc). The app is designed using JavaScript.
 
 In the first image its possible to see how the snippet works when the box is empty (this example is configured to accept 10 characters and shows the user this feature of the code)
 
